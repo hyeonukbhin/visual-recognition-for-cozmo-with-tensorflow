@@ -5,16 +5,16 @@ import shutil
 
 def upload():
     try:
-        conn = Connection(key='xxx',
+        conn = Connection(key='@Dkagh99',
                           authurl='https://identity.open.softlayer.com/v3',
                           auth_version='3',
-                          os_options={"project_id": 'xxx',
-                                      "user_id": 'xxx',
-                                      "region_name": 'dallas'}
+                          os_options={"project_id": 'Default',
+                                      "user_id": 'bhu@kist.re.kr',
+                                      "region_name": 'Default'}
                           )       
 
         zipFileName = 'cozmo-photos' 
-        shutil.make_archive(zipFileName, 'zip', '../take-pictures/pictures')
+        shutil.make_archive(zipFileName, 'zip', '../1-take-pictures/pictures')
         print("Done: Zipping Pictures") 
 
         container = 'tensorflow'
